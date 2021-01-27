@@ -52,11 +52,21 @@ const nextDate = `${currentYear+1}-${currentMonth}-${currentDay}`;
 getCurrentMonth(); 
 const popular_games = base_url + `games?dates=${prevDate},${currDate}&ordering=-rating&page_size=10`;
 
+const upcoming_games = base_url + `games?dates=${currDate},${nextDate}&ordering=-added&page_size=10` ; 
 
 
+const new_games = base_url +  `games?dates=${prevDate},${currDate}&ordering=-released&page_size=10`
  export const popularGamesURL= ()=> {
 
     
     return popular_games ; 
+}
+
+export const upcomingGamesURL = () => {
+    return upcoming_games; 
+}
+
+export const newGamesURL = () => {
+    return new_games ; 
 }
 
