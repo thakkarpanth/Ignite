@@ -70,3 +70,14 @@ export const newGamesURL = () => {
     return new_games ; 
 }
 
+// GAME DETAILS
+
+export const gameDetailsURL = (id) => {
+
+    return base_url + `games/${id}`; 
+}
+
+export const gameScreenshotURL = (id) => {
+
+    return base_url + `games/${id}/screenshots`; 
+}
