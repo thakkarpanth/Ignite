@@ -9,7 +9,6 @@ import GameDetail from '../components/GameDetail';
 
 import {useLocation} from 'react-router-dom'; 
 
-import {AnimatePresence , AnimateSharedLayout} from 'framer-motion'; 
 
 const Home = () => {
 

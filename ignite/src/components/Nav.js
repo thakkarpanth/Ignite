@@ -3,7 +3,7 @@ import React, { useState } from 'react' ;
 import styled from 'styled-components'; 
 import {motion} from 'framer-motion'; 
 
-import {useSelector , useDispatch} from 'react-redux' ; 
+import { useDispatch} from 'react-redux' ; 
 import {fetchSearch } from '../actions /gameAction'; 
 const Nav = () => {
 
